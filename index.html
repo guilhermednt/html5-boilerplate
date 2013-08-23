@@ -6,13 +6,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>The World's Best Secret Keeper</title>
+        <meta name="description" content="The World's Best Secret Keeper is a place where your secrets are completely safe.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -21,11 +21,70 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">The World's Best Secret Keeper</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="main">
+                <h1>The World's Best Secret Keeper</h1>
+                <p class="lead">Welcome to The World's Best Secret Keeper, where your secrets are totally safe.</p>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2>How It Works</h2>
+                </div>
+                <div class="span12">
+                    <p>You have a secret, we know that. We also know you have the urge to share it to someone that won't ever tell it to somebody else.</p>
+                    <p><strong>This</strong> is when we come into place! You can <strong>completely</strong> trust us your secret and rest assured they'll die with us. <strong>Nobody</strong> will ever know about it from us.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2>How do I know I can trust you?</h2>
+                </div>
+                <div class="span12">
+                    <p>Well, that's quite simple, really: we just don't store anything!</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="secret">Your Secret:</label>
+                        <textarea id="secret" class="form-control" rows="3" placeholder="We won't tell nobody! Word."></textarea>
+                    </div>
+                    <p class="text-center">
+                        <button class="btn btn-lg btn-default forgetIt" type="reset">Hmm, forget it...</button>
+                        <button class="btn btn-lg btn-primary submit" type="submit">Okay, I'm done!</button>
+                    </p>
+                </form>
+                <div class="done">
+                    <p><strong>That's it!</strong> Your secret is safe with us now. Nobody will ever know it!</p>
+                    <p class="text-center">
+                        <button class="btn btn-lg btn-link another" type="submit"><strong>Awesome!</strong> But I have another one...</button>
+                    </p>
+                </div>
+            </div>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
