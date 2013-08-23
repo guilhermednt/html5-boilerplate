@@ -5,6 +5,17 @@ body>.container>.main {
   padding: 40px 15px;
   text-align: center;
 }
-div.done {
+.done, .done:target ~ #tellSecret {
 	display: none;
+}
+.done:target {
+	display: block;
+}
+
+#tellSecret {
+	display: block;
+}
+
+#tellSecret:target {
+	display: block;
 }

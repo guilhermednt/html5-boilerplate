@@ -1,13 +1,17 @@
 $( document ).ready(function() {
-	$("button.forgetIt").click(function() {
+	$("form").submit(function() {
+		return false;
+	});
+	$(".forgetIt").click(function() {
 		$("textarea#secret").attr("placeholder", "Forget what? I've never seen you. ;)");
 	});
-	$("button.submit").click(function() {
+	$(".submit").click(function() {
 		$("form").slideUp();
 		$("div.done").fadeIn();
+		$("textarea#secret").html('');
 	});
-	$("button.another").click(function() {
-		$("form").slideDown();
+	$(".another").click(function() {
 		$("div.done").fadeOut();
+		$("form").slideDown();
 	});
 });
