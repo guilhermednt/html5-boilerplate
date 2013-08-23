@@ -8,7 +8,7 @@ $( document ).ready(function() {
 	$(".submit").click(function() {
 		$("form").slideUp();
 		$("div.done").fadeIn();
-		$("textarea#secret").html('');
+		$("textarea#secret").val('');
 	});
 	$(".another").click(function() {
 		$("div.done").fadeOut();
